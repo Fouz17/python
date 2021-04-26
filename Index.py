@@ -2,7 +2,7 @@ rows = int(input("ENTER ROW NUMBERS:"))
 cols = int(input("ENTER COLUMN NUMBERS:"))
 numOfMatrix = int(input("ENTER NUMBER OF MATRIX:"))
 
-matrices = []
+matrices = {}
 #b = []
 NOM = 0
 while(NOM < numOfMatrix):
@@ -20,14 +20,20 @@ while(NOM < numOfMatrix):
         matrix.append(row)
         n = n + 1
     # print(matrix)
-    matrices.append(matrix)
+    matrices['Matrix '+str(NOM+1)] = matrix
     NOM = NOM + 1
 #print(l)
 
-p = 0
-while (p < len(matrix)):
-    print(matrix[p])
-    p = p + 1
-print(matrices)
+
+
+k = 0
+while (k < len(matrices)):
+    print("Matrix " + str(k+1))
+    m = (matrices['Matrix '+ str(k+1)])
+    p = 0
+    while (p < len(m)):
+        print(m[p])
+        p = p + 1
+    k = k + 1
 
 #MADE BY ASAD AND FOUZ AND FAIQ AND ASDULLAH AND AMAN AND QAMBER ALI4
