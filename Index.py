@@ -46,4 +46,5 @@ while k < len(matrices):
     k = k + 1
 
 #MADE BY ASAD AND FOUZ AND FAIQ AND ASDULLAH AND AMAN AND QAMBER ALI4
-op.multiply(matrices["Matrix 1"],matrices["Matrix 2"])
+# op.multiply(matrices["Matrix 1"],matrices["Matrix 2"])
+op.matrixMultiply(matrices["Matrix 1"],matrices["Matrix 2"])
