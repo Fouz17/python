@@ -40,8 +40,10 @@ def matrixMultiply(matrix1,matrix2):
                 y = y + 1
             result.append(a)
             x = x + 1
-    p = 0
-    print('MULTIPLIED MATRIX')
-    while(p < len(result)):
-        print(result[p])
-        p = p + 1
+        p = 0
+        print('MULTIPLIED MATRIX')
+        while(p < len(result)):
+            print(result[p])
+            p = p + 1
+    else:
+        print('MATRICES ARE NOT MULTIPLICABLE!')
